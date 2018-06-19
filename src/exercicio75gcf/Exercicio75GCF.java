@@ -17,6 +17,7 @@ public class Exercicio75GCF {
             System.out.println("1 - Calcular a tabuada");
             System.out.println("2 - Calcular o fatorial");
             System.out.println("3 - Calcular bascara");
+            System.out.println("4 - Calcular pitagoras");
             System.out.println("0 - Sair");
             opcao = s.nextInt();
 
@@ -29,6 +30,9 @@ public class Exercicio75GCF {
                     break;
                 case 3:
                     calculaBascara();
+                    break;
+                case 4:
+                    calculaPitagoras();
                     break;
                 case 0:
                     System.exit(0);
@@ -71,5 +75,14 @@ public class Exercicio75GCF {
         double x2 = (-b - delta)/(2*a);
         System.out.println("x1 = " + x1);
         System.out.println("x2 = " + x2);
+    }
+
+    private static void calculaPitagoras() {
+        System.out.println("Informe o valor 'a' da equeção");
+        double a = s.nextInt();
+        System.out.println("Informe o valor 'b' da equeção");
+        double b = s.nextInt();
+        double c = Math.pow(a, 2) + Math.pow(b, 2);
+        System.out.println("O resultado é " + c);
     }
 }
